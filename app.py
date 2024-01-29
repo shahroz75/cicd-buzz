@@ -3,8 +3,6 @@ import signal
 from flask import Flask
 from buzz import generator
 
-// added for test. 
-
 app = Flask(__name__)
 
 signal.signal(signal.SIGINT, lambda s, f: os._exit(0))
